@@ -155,6 +155,54 @@
         flex-wrap: wrap;
       }
     }
+    .example-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.example-dropdown {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+
+.example-dropdown:hover {
+  border-color: #4ade80;
+}
+
+.example-dropdown summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4ade80;
+  transition: 0.3s;
+}
+
+.example-dropdown summary:hover {
+  color: #86efac;
+}
+
+.dropdown-content {
+  margin-top: 25px;
+}
+
+.example-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.source {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
   </style>
 </head>
 <body>
@@ -248,77 +296,150 @@
   </section>
 
   <section id="global">
-    <h2 class="section-title">Global Examples</h2>
+  <h2>Global Examples</h2>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Sub-Saharan Africa</h3>
+  <p>
+    Energy inequality affects communities around the world differently.
+    Many low-income and rural populations struggle to access affordable,
+    clean, and reliable renewable energy.
+  </p>
+
+  <div class="example-buttons">
+
+    <!-- INDIA -->
+    <details class="example-dropdown">
+
+      <summary>India</summary>
+
+      <div class="dropdown-content">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Indian_Solar_Panels.jpg"
+          alt="Solar panels in India"
+          class="example-image"
+        >
+
         <p>
-          Many rural communities lack reliable electricity access, limiting healthcare,
-          education, and economic opportunities.
+          Millions of people in rural India still experience unreliable
+          electricity access. Many villages depend on coal and diesel
+          generators, which increase pollution and health problems.
         </p>
-      </div>
 
-      <div class="timeline-item">
-        <h3>United States</h3>
         <p>
-          Low-income neighborhoods and communities of color are more likely to live near fossil fuel plants
-          and experience higher pollution exposure.
+          Community solar programs are helping provide cleaner and more
+          reliable electricity while lowering long-term energy costs.
         </p>
-      </div>
 
-      <div class="timeline-item">
-        <h3>India</h3>
+        <p class="source">
+          Source: World Bank Energy Program
+        </p>
+
+      </div>
+    </details>
+
+    <!-- AFRICA -->
+    <details class="example-dropdown">
+
+      <summary>Sub-Saharan Africa</summary>
+
+      <div class="dropdown-content">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Solar_panel_Africa.jpg"
+          alt="Solar energy in Africa"
+          class="example-image"
+        >
+
         <p>
-          Energy access has improved, but many rural areas still struggle with unreliable power grids
-          and dependence on fossil fuels.
+          Many communities in Sub-Saharan Africa still live without
+          stable electricity. This limits access to healthcare,
+          education, refrigeration, and economic opportunities.
         </p>
-      </div>
 
-      <div class="timeline-item">
-        <h3>Pacific Island Nations</h3>
         <p>
-          Rising sea levels threaten infrastructure and energy systems,
-          making renewable energy adaptation increasingly important.
+          Renewable microgrids and small solar systems are helping
+          remote communities gain affordable and sustainable energy access.
         </p>
+
+        <p class="source">
+          Source: International Energy Agency (IEA)
+        </p>
+
       </div>
-    </div>
-  </section>
+    </details>
 
-  <section id="solutions">
-    <h2 class="section-title">Possible Solutions</h2>
+    <!-- UNITED STATES -->
+    <details class="example-dropdown">
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Community Solar</h3>
+      <summary>United States</summary>
+
+      <div class="dropdown-content">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/02/Community_Solar_Project.jpg"
+          alt="Community solar project"
+          class="example-image"
+        >
+
         <p>
-          Shared solar projects allow multiple households to benefit from renewable energy
-          without installing panels on their own homes.
+          In the United States, low-income neighborhoods and communities
+          of color often pay higher percentages of income on electricity.
         </p>
-      </div>
 
-      <div class="card">
-        <h3>Government Investment</h3>
         <p>
-          Policies and funding can help expand clean energy infrastructure in underserved communities.
+          These communities are also more likely to live near fossil fuel
+          infrastructure, leading to increased pollution and health risks.
         </p>
-      </div>
 
-      <div class="card">
-        <h3>Energy Efficiency Programs</h3>
         <p>
-          Weatherization, efficient appliances, and modern insulation reduce energy costs and emissions.
+          Community solar programs and government assistance projects are
+          helping improve renewable energy access.
         </p>
-      </div>
 
-      <div class="card">
-        <h3>Energy Democracy</h3>
-        <p>
-          Giving communities control over local energy systems can improve equity and sustainability.
+        <p class="source">
+          Source: U.S. Department of Energy
         </p>
+
       </div>
-    </div>
-  </section>
+    </details>
+
+    <!-- LATIN AMERICA -->
+    <details class="example-dropdown">
+
+      <summary>Latin America</summary>
+
+      <div class="dropdown-content">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/87/Solar_energy_rural.jpg"
+          alt="Renewable energy in Latin America"
+          class="example-image"
+        >
+
+        <p>
+          Some rural communities in Latin America struggle with limited
+          access to electricity due to poverty and isolated geography.
+        </p>
+
+        <p>
+          Renewable energy projects, especially solar and hydroelectric
+          systems, are helping improve energy access in remote areas.
+        </p>
+
+        <p>
+          However, some projects have also raised concerns about land rights
+          and environmental justice for Indigenous communities.
+        </p>
+
+        <p class="source">
+          Source: United Nations Sustainable Energy Reports
+        </p>
+
+      </div>
+    </details>
+
+  </div>
+</section>
 
   <section id="sources">
     <h2 class="section-title">MLA Sources</h2>
